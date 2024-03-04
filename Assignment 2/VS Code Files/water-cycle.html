@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Cycle</title>
+    <style>
+        #water-cycle {
+            padding: 40px 0;
+            margin: 70px;
+            background: #ffffff;
+        }
+
+        .water-cycle-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #water-cycle h2 {
+            font-size: 2.3rem;
+        }
+
+        #water-cycle p {
+            font-size: 1.3rem;
+            color: #000000;
+        }
+
+        .water-cycle-img {
+            flex: 1 1 400px;
+            padding: 30px;
+            transform: translateX(150%);
+            animation: about-img-animation 1s ease-in-out forwards;
+        }
+
+        @keyframes about-img-animation {
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .water-cycle-text {
+            flex: 1 1 400px;
+            padding: 10px;
+            margin: auto;
+            transform: translate(-150%);
+            animation: about-text-animation 1s ease-in-out forwards;
+        }
+
+        @keyframes about-text-animation {
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .water-cycle-img img {
+            display: block;
+            height: 400px;
+            max-width: 100%;
+            margin: auto;
+            object-fit: cover;
+            object-position: right;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="water-cycle">
+        <div class="water-cycle-wrapper container">
+            <div class="water-cycle-text">
+                <h2>Water Cycle Experiment</h2>
+                <h3>Ingredients Required:</h3>
+                <p>
+                    A ziplock bag, water, food coloring.
+                </p>
+                <h3>How to Set Up:</h3>
+                <p>
+                    Filling a ziplock 1/4th with colorful water and placing it near your classroom window, you can show
+                    students how sunlight evaporates water to form rain, and the cycle keeps on repeating.
+                </p>
+            </div>
+            <div class="water-cycle-img">
+                <img src="water-cycle.jpg" alt="img" />
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

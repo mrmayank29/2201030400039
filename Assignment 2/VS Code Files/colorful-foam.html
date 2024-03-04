@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Foam</title>
+    <style>
+        #colorful-foam{
+  padding: 40px 0;
+  margin: 70px;  
+  background: #ffffff;
+}
+
+.colorful-foam-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#colorful-foam h2 {
+  font-size: 2.3rem;
+}
+
+#colorful-foam p {
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.colorful-foam-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.colorful-foam-text {
+  flex: 1 1 400px;
+  padding: 10px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.colorful-foam-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+    </style>
+</head>
+<body>
+    <section id="colorful-foam">
+    <div class="colorful-foam-wrapper container">
+        <div class="colorful-foam-text">
+            <h2>Colorful Foam Experiment</h2>
+            <h3>Ingredients Required:</h3>
+            <p>
+                A soda bottle, ½ cup hydrogen peroxide liquid, dry yeast, warm water, a small cup, safety goggles, and liquid dish soap. 
+            </p>
+            <h3>How to Set Up:</h3>
+            <p>
+                Put on your safety goggles and pour hydrogen peroxide liquid into a bottle. 
+                Add food color and liquid dish soap into a bottle. Shake it. 
+                In a small cup, mix warm water and yeast for 30 seconds. 
+                Finally, let your students pour the yeast mixture into a bottle to form colorful foam.  
+            </p>
+        </div>
+        <div class="colorful-foam-img">
+            <img src="colorful-foam.jpg" alt="img" />
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Germination</title>
+    <style>
+        #seed-germination {
+            padding: 40px 0;
+            margin: 70px;
+            background: #ffffff;
+        }
+
+        .seed-germination-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #seed-germination h2 {
+            font-size: 2.3rem;
+        }
+
+        #seed-germination p {
+            font-size: 1.3rem;
+            color: #000000;
+        }
+
+        .seed-germination-img {
+            flex: 1 1 400px;
+            padding: 30px;
+            transform: translateX(150%);
+            animation: about-img-animation 1s ease-in-out forwards;
+        }
+
+        @keyframes about-img-animation {
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .seed-germination-text {
+            flex: 1 1 400px;
+            padding: 10px;
+            margin: auto;
+            transform: translate(-150%);
+            animation: about-text-animation 1s ease-in-out forwards;
+        }
+
+        @keyframes about-text-animation {
+            100% {
+                transform: translate(0);
+            }
+        }
+
+        .seed-germination-img img {
+            display: block;
+            height: 400px;
+            max-width: 100%;
+            margin: auto;
+            object-fit: cover;
+            object-position: right;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="seed-germination">
+        <div class="seed-germination-wrapper container">
+            <div class="seed-germination-text">
+                <h2>Seed Germination Experiment</h2>
+                <h3>Ingredients Required:</h3>
+                <p>
+                    A jar, different seeds
+                </p>
+                <h3>How to Set Up:</h3>
+                <p>
+                    Make your students understand the seed germination process with a simple classroom experiment.
+                    Request your class to bring different seeds like chickpeas, lentils, corn, etc. Show them how
+                    different seeds can germinate in a dark and humid bottle simultaneously.
+                </p>
+            </div>
+            <div class="seed-germination-img">
+                <img src="seed-germination.jpg" alt="img" />
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

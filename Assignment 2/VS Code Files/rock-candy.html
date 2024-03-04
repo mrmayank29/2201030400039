@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Candy</title>
+    <style>
+        #rock-candy{
+  padding: 40px 0;
+  margin: 70px;  
+  background: #ffffff;
+}
+
+.rock-candy-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#rock-candy h2 {
+  font-size: 2.3rem;
+}
+
+#rock-candy p {
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.rock-candy-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.rock-candy-text {
+  flex: 1 1 400px;
+  padding: 10px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.rock-candy-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+    </style>
+</head>
+<body>
+    <section id="rock-candy">
+    <div class="rock-candy-wrapper container">
+        <div class="rock-candy-text">
+            <h2>Rock Candy Experiment</h2>
+            <h3>Ingredients Required:</h3>
+            <p>
+                A jar, saucepan, water, sugar, food coloring, skewer, clothespin, thread.
+            </p>
+            <h3>How to Set Up:</h3>
+            <p>
+                Pour water into a saucepan and place it over the stove. Keep adding sugar into the Water until Water reaches saturation level (no more sugar can dissolve in water). 
+                Cool the water down and pour it into a jar along with your favorite food coloring. 
+                With the help of a skewer and clothespin, hang a thread in the middle of the jar. 
+                It takes time for the crystallization process to start, but gradually dissolved sugar will wrap around the thread to create rock candy.  
+            </p>
+        </div>
+        <div class="rock-candy-img">
+            <img src="rock-candy.jpg" alt="img" />
+        </div>
+    </div>
+</section>
+</body>
+</html>

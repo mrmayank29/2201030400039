@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Fizz</title>
+    <style>
+        #orange-fizz{
+  padding: 40px 0;
+  margin: 70px;  
+  background: #ffffff;
+}
+
+.orange-fizz-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#orange-fizz h2 {
+  font-size: 2.3rem;
+}
+
+#orange-fizz p {
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.orange-fizz-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.orange-fizz-text {
+  flex: 1 1 400px;
+  padding: 10px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.orange-fizz-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+    </style>
+</head>
+<body>
+    <section id="orange-fizz">
+    <div class="orange-fizz-wrapper container">
+        <div class="orange-fizz-text">
+            <h2>Orange Fizz Experiment</h2>
+            <h3>Ingredients Required:</h3>
+            <p>
+                An orange and baking soda. 
+            </p>
+            <h3>How to Set Up:</h3>
+            <p>
+                Slice an orange into different sections for this simple kid’s science experiment. 
+                Then, dip a section into baking soda and ask your students to take a bite. 
+                When orange bubbles form in your students’ mouths, they will surely enjoy this experiment.  
+            </p>
+        </div>
+        <div class="orange-fizz-img">
+            <img src="orange-fizz.jpg" alt="img" />
+        </div>
+    </div>
+</section>
+</body>
+</html>

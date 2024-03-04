@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lava Lamp</title>
+    <style>
+        #lava-lamp{
+  padding: 40px 0;
+  margin: 70px;  
+  background: #ffffff;
+}
+
+.lava-lamp-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#lava-lamp h2 {
+  font-size: 2.3rem;
+}
+
+#lava-lamp p {
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.lava-lamp-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.lava-lamp-text {
+  flex: 1 1 400px;
+  padding: 10px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.lava-lamp-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+    </style>
+</head>
+<body>
+    <section id="lava-lamp">
+    <div class="lava-lamp-wrapper container">
+        <div class="lava-lamp-text">
+            <h2>Lava Lamp Experiment</h2>
+            <h3>Ingredients Required:</h3>
+            <p>
+                A plastic bottle, fizzing tablets, vegetable oil, water, food coloring.
+            </p>
+            <h3>How to Set Up:</h3>
+            <p>
+                Fill a plastic bottle with water (1/4th part) and vegetable oil (remaining amount). 
+                Add food coloring and wait for a few minutes before putting a fizzing tablet in the bottle. 
+                Then, turn off the lights and flash a light on a lava lamp to observe colorful blobs building. 
+            </p>
+        </div>
+        <div class="lava-lamp-img">
+            <img src="lava-lamp.jpg" alt="img" />
+        </div>
+    </div>
+</section>
+</body>
+</html>
